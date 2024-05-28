@@ -1,52 +1,96 @@
-form{
-    padding:5vw;
-}
-fieldset{
-    padding-top: 5vw;
-    padding-bottom: 5vw;
-    padding-left: 10vw;
-    padding-right: 10vw;
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('images/bevver.jpg');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-legend{
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    background-color: #d3f2c1;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+}
+
+.company-name {
+    font-size: 24px;
+    color: #0a0;
+    margin: auto 0;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid #000;
+    padding: 20px;
+    margin-top: 20px;
+    width: 50%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.fieldset {
+    border: none;
+}
+
+legend {
+    font-size: 24px;
     text-align: center;
+    margin-bottom: 20px;
 }
 
-#fir{
-    background-color: aqua;
-}
-#sec{
-    background-color: red;
-}
-#thi{
-    background-color: violet;
-}
-#fou{
-    background-color: green;
-}
-#fif{
-    background-color: yellow;
-}
-#six{
-    background-color: orange;
-}
-#sev{
-    background-color: pink;
-    position: relative;
-    left: 40vw;
-    bottom: 46vh;
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
 }
 
+.input-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
 
-#llname{
-    padding-left: 10vw;
+.input-group input, .input-group textarea {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
-#lname{
-    margin-left: 5vw;
+
+.input-group div {
+    display: flex;
+    align-items: center;
 }
-#lpword{
-    padding-left: 13vw;
+
+.input-group div label {
+    margin-left: 10px;
 }
-#pword{
-    margin-left:5vw ;
+
+input[type="button"] {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    align-self: center;
+    width: 100px;
+    margin-top: 10px;
+}
+
+input[type="button"]:hover {
+    background-color: #444;
 }
